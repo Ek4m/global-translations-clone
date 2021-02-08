@@ -1,0 +1,7 @@
+.main--header{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url('/images/translators--background.jpg');
+    background-position: center;
+    background-size: cover;
+}

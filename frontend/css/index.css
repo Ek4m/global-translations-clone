@@ -1,0 +1,44 @@
+
+.main--header{
+    width: 100%;
+    min-height: 100vh;
+    background: url('/images/homepage-header__background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main--header__content{
+margin-left: 3rem;
+font-family: 'Raleway', sans-serif;
+width: 600px;
+}
+
+.main--header__content h1,
+.main--header__content p{
+    color: white;
+    text-shadow: 0px 3px 4px black;
+}
+
+.main--header__content h1{
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+.main--header__content div{
+    margin: 2rem 0 0 0;
+    /* box-shadow: 0px 2px 4px 2px black; */
+}
+.main--header__content div a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight:bold;
+    padding: 10px;
+    background:linear-gradient(to bottom, rgb(255, 136, 0), rgb(206, 110, 1), rgb(177, 95,2),rgb(116, 62, 0));
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.473);
+}

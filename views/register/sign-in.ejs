@@ -1,0 +1,23 @@
+<%-include('../partials/up.ejs')%>
+<link rel="stylesheet" href="/css/register.css">
+<%-include('../partials/navbar.ejs')%>
+<div class="register--form">
+    <div class="register--header">
+        <h1>Login</h1>
+    </div>
+    <form action="/register/sign-in" method="POST">
+    <div class="form-control">
+        <label for="signinEmal">Email</label>
+        <input type="email" required name="signinEmail">
+    </div>
+    <div class="form-control">
+        <label for="signinPassword">Password</label>
+        <input type="password" required  name="signinPassword">
+    </div>
+    <button>Login</button>
+    <p class="register__path">Don't you have account? <a href="/register/sign-up"> Create</a> one</p>
+    </form>
+</div>
+<script src="/js/script.js"></script>
+
+<%-include('../partials/foot.ejs')%>

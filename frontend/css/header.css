@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.with--paddingTop{
+    padding-top: 5rem;
+}
+
+.header--transparent{
+    background-color: rgba(233, 233, 233, 0.212);
+}
+
+.header--normal{
+    background: linear-gradient(to top, grey, rgb(92, 92, 92));
+}
+
+header{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive; 
+}
+
+.nav-brand a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.header--menu{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header--menu__button{
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease 0s;
+    border-radius: 5px;
+}
+
+.header--menu__button:hover{
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
+.header--menu__content{
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: max-content;
+    background: linear-gradient(to bottom right, white, rgb(211, 211, 211));
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.39);
+}
+
+.header--menu__content li {
+    list-style: none;
+    margin: 0.5rem;
+}
+.header--menu__content li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
+}
+
+.header--menu__content  li a:hover{
+   color: rgb(185, 185, 185);
+}
+
+.header--register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header--register__signin,
+.header--register__signup{
+    list-style: none;
+    margin: 1rem;
+}
+
+.header--register__signin a{
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;   
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    transition: all 0.2s ease 0s;
+}
+
+.header--register__signin a:hover{
+    background-color: whitesmoke;
+    color: rgb(1, 51, 68);
+    border-radius: 2px;
+}
+
+.header--register__signup a{
+    background-color: whitesmoke;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;    
+    color: rgb(1, 51, 68);
+    border-radius: 2px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+.header--register__signup a:hover{
+    background-color: transparent;
+    color: white;
+}
+.header--input__search__form{
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    border-bottom: 1.5px solid rgba(245, 245, 245, 0.959);
+
+}
+.header--input__search__form input[type="text"]{
+    width: 250px;
+    margin: 0 5px 0 0;
+    background-color: transparent;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(245, 245, 245, 0.959);
+    border:none;
+    padding: 5px;
+}
+
+.header--input__search__form input[type="text"]::placeholder {
+    color: rgba(245, 245, 245, 0.959);  
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    opacity: 1; 
+  }
+  
+  .header--input__search__form input[type="text"]:-ms-input-placeholder { 
+   color: rgba(245, 245, 245, 0.959);
+   text-transform: uppercase;
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+  }
+  
+  .header--input__search__form input[type="text"]::-ms-input-placeholder { 
+   color: rgba(245, 245, 245, 0.959);
+   text-transform: uppercase;
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+  }
+.header--input__search__form input[type="text"]:focus{
+outline: none;
+background: linear-gradient(to bottom left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(119, 119, 119, 0.514));
+}
+
+.header--input__search__form button{
+ background-color: transparent;
+ border: none;
+ height: 30px;
+width: 30px;
+}
+.header--input__search__form button i{
+    color: rgba(245, 245, 245, 0.959);
+    font-size: 1.2rem;
+}
+
+.header--input__search__form button:hover i{
+color: white;
+cursor: pointer;
+}
+
+.header--input__search__form button:focus{
+    outline: none;
+}

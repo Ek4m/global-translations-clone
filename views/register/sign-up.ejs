@@ -1,0 +1,36 @@
+<%-include('../partials/up.ejs')%>
+<link rel="stylesheet" href="/css/register.css">
+<%-include('../partials/navbar.ejs')%>
+<div class="register--form">
+    <div class="register--header">
+        <h1>Registration</h1>
+    </div>
+    <form action="/register/sign-up" method="POST">
+        <div class="form-control">
+            <label for="x">Name</label>
+           <div class="form-control__names">
+            <div class="form-control__name">
+                <input type="text" name="signupName" required>
+                <label for="signupName">Firstname</label>
+            </div>
+            <div class="form-control__surname">
+                <input type="text" name="signupSurname" required>
+                <label for="signupSurname">Lastname</label>
+            </div>
+           </div>
+        </div>
+    <div class="form-control">
+        <label for="signupEmal">Email</label>
+        <input type="email" name="signupEmail" required>
+    </div>
+    <div class="form-control">
+        <label for="signupPassword">Password</label>
+        <input type="password"  name="signupPassword" required>
+    </div>
+    <button>REGISTER</button>
+    <p class="register__path">Already have account? <a href="/register/sign-in"> Sign in</a> with existing profile</p>
+    </form>
+</div>
+<script src="/js/script.js"></script>
+
+<%-include('../partials/foot.ejs')%>

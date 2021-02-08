@@ -1,0 +1,26 @@
+</head>
+<% if(!headerTransparent){%>
+<body class="with--paddingTop">
+<%}else{%>
+    <body>
+    <%}%>
+<header class="<% if(headerTransparent){%>header--transparent<%}else{%>header--normal<%}%>">
+    <div class="nav-brand">
+        <a href="/">InterTranslate</a>
+    </div>
+    <div class="header--menu">
+        <p class="header--menu__button">Menu</p>
+        <ul class="header--menu__content">
+          <li><a href="/translators">Our professionals</a></li>
+          <li><a href="/translate">Translate now</a></li>
+        </ul>
+    </div>
+      <form class="header--input__search__form" action="/" method="GET">
+      <input type="text" name="search" required placeholder="TYPE HERE" class="header--input__search">
+      <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <ul class="header--register">
+          <li class="header--register__signin"><a href="/register/sign-in">Sign in</a></li>
+          <li class="header--register__signup"><a href="/register/sign-up">Create Profile</a></li>
+      </ul>
+  </header>
