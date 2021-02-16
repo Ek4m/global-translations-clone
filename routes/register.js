@@ -8,5 +8,7 @@ router.post('/sign-in', registerRoutes.postSignIn);
 router.get('/sign-up',registerRoutes.getSignUp);
 router.post('/sign-up', registerRoutes.postSignUp);
 
+router.get('/logout',registerRoutes.getLogout);
+
 
 module.exports = router;
