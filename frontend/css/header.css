@@ -336,6 +336,62 @@ color: black;
 
 .header--profile{
     min-width: 100px;
+    position: relative;
+    background-color: white;
+    padding: 5px;
+}
+
+.header--profile__inner{
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.header--profile__name{
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.header--profile__options{
+    width: 110px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: -5px;
+    padding: 4px;
+    transition: 0.2s ease 0s;
+  
+}
+
+.header--profile__options ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header--profile__options ul li{
+    list-style: none;
+}
+
+.header--profile__options ul li a{
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+}
+
+.header--profile__options ul li a:hover{
+    color: black;
+}
+
+
+@media(min-width:866px){
+    .sidebar--menu{
+        display: none;
+    }
+ 
 }
 
 .header--profile__inner{

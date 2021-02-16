@@ -26,6 +26,13 @@ exports.getSignIn = (req, res, next) => {
             user:null
         })
     }
+
+exports.getSignIn = (req, res, next) => {
+    res.render('./register/sign-in',{
+        pageTitle:'Login',
+        headerTransparent:true,
+        user:req.user
+    })
 }
 
 exports.postSignIn = (req, res, next) => {
@@ -71,6 +78,12 @@ exports.getSignUp = (req, res, next) => {
         })
     }
         
+    }
+        res.render('./register/sign-up',{
+            pageTitle:'Register now',
+            headerTransparent:true,
+            user:req.user
+        })
     }
 
 
