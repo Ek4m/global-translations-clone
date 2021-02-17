@@ -1,0 +1,39 @@
+<%-include('./partials/up.ejs')%>
+<link rel="stylesheet" href="/css/profile.css">
+<%-include('./partials/navbar.ejs')%>
+<main>
+    <div class="profile--container">
+        <div class="profile--image">
+            <img src="https://www.emmegi.co.uk/wp-content/uploads/2019/01/User-Icon.jpg" alt="profile photo">
+        </div>
+        <div class="profile--content">
+            <h1>Profile Info:</h1>
+            <div class="profile--content__container">
+                <div class="profile--content__info">
+                  <div class="profile--info__control">
+                    <b>Firstname:</b>
+                    <p><%=user.firstName%></p>
+                  </div>
+                  <hr>
+                 <div class="profile--info__control">
+                    <b>Lastname:</b>
+                    <p><%=user.lastName%></p>
+                 </div>
+                 <hr>
+                  <div class="profile--info__control">
+                    <b>Email:</b>
+                    <a href="mailto:<%=user.email%>"><%=user.email%></a>
+                  </div>
+                  <hr>
+
+                </div>
+                <div class="profile--update__info">
+                    <a href="/profile/update">Update your info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+
+<%-include('./partials/foot.ejs')%>

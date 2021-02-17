@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 
-const UsersSchema = require('./models/User');
 const registerRoutes = require('./routes/register');
 const indexRoutes = require('./routes/index');
 
@@ -28,7 +27,7 @@ app.use((req, res, next) => {
 
 
 app.use('/register',registerRoutes);
-app.use('/',indexRoutes);
+app.use('/', indexRoutes);
 
 
 

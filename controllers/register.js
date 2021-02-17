@@ -5,8 +5,8 @@ const User = require('../models/User');
 
 exports.getSignIn = (req, res, next) => {
     if(req.user){
+        console.log('USR',req.user)
         UsersSchema.findOne({_id:req.user._id}).then(user => {
-            console.log(user);
             res.render('./register/sign-in',{
                 pageTitle:'Login',
                 headerTransparent:true,
@@ -20,20 +20,16 @@ exports.getSignIn = (req, res, next) => {
             })
         })
     }else{
+        console.log('USR NO')
+
         res.render('./register/sign-in',{
             pageTitle:'Login',
             headerTransparent:true,
             user:null
         })
     }
-
-exports.getSignIn = (req, res, next) => {
-    res.render('./register/sign-in',{
-        pageTitle:'Login',
-        headerTransparent:true,
-        user:req.user
-    })
 }
+
 
 exports.postSignIn = (req, res, next) => {
     const myData = {
@@ -78,12 +74,6 @@ exports.getSignUp = (req, res, next) => {
         })
     }
         
-    }
-        res.render('./register/sign-up',{
-            pageTitle:'Register now',
-            headerTransparent:true,
-            user:req.user
-        })
     }
 
 

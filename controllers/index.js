@@ -73,6 +73,23 @@ exports.getTranslate = (req, res, next) => {
             headerTransparent:true,
             user:null
         })
-    }
-   
+    }  
+}
+
+exports.getProfile = (req, res, next) => {
+    if(req.user){
+        UserSchema.findOne({_id:req.user._id}).then(user => {
+            console.log(user);
+            res.render('profile', {
+                pageTitle:user.firstName,
+                headerTransparent:false,
+                user:user
+            })
+        }).catch(err => {
+            res.redirect('/')
+
+        })
+    }else{
+      res.redirect('/')
+    }  
 }

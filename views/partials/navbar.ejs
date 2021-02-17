@@ -1,8 +1,12 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="sidebar--menu">
+<% if(headerTransparent){%>
+    <header class="header--transparent">
+<%}else{%>
+    <header class="header--normal">
+    <%}%>
+    <div class="sidebar--menu">
             <div class="sidebar--menu__header">
                 <div class="nav-brand">
                     <a href="/">InterTranslate</a>
@@ -17,8 +21,13 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/translators">Our Translators</a></li>
                     <li><a href="/translate">Translate now</a></li>
-                    <li><a href="/register/sign-up">Register</a></li>
-                    <li><a href="/register/sign-in">Login</a></li>
+                   <%if(user){%>
+                    <li><a href="/profile">View Profile</a></li>
+                    <li><a href="/register/logout">Logout</a></li>
+                    <%}else{%>
+                        <li><a href="/register/sign-up">Register</a></li>
+                        <li><a href="/register/sign-in">Login</a></li>
+                        <%}%>
                 </ul>
             </div>
         </div>
@@ -39,18 +48,11 @@
        <% if(user){%>
         <div class="header--profile">
             <div class="header--profile__name">
-<<<<<<< HEAD
                 <p>Elvin</p>
                 <div class="header--profile__icon">
                     <i class="fas fa-user"></i>
-                    <div class="header--profile__icon--arr">
-                        <i class="fas fa-sort-down"></i>
-                    </div>
-=======
-                <p><%=user.firstName%></p>
-                <div class="header--profile__icon">
-                    <i class="fas fa-user"></i>
->>>>>>> 40c43510e0a0b89a23f340c75388d73359b87331
+                    <i class="fas fa-sort-down"></i>
+
                 </div>
             </div>
             <div class="header--profile__inner">

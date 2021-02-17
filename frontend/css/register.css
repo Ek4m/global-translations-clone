@@ -142,13 +142,13 @@ body{
     }
 }
 
-@media(max-width:866px){
+@media(max-width:870px){
     .form-control__names{
         flex-direction: column;
     }
     .register--form{
         margin-top: 4rem;
-        width: 480px;
+        width: 450px;
     }
 
     .register--form form{

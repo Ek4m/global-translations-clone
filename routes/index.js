@@ -9,4 +9,6 @@ router.get('/translators', indexRoutes.getTranslators);
 
 router.get('/translate', indexRoutes.getTranslate);
 
+router.get('/profile', indexRoutes.getProfile);
+
 module.exports = router;
